@@ -30,6 +30,12 @@ func (t *Token) Position() *position.Position {
 	return t.position
 }
 
+// SetPosition attach position
+func (t *Token) SetPosition(pos *position.Position) *Token {
+	t.position = pos
+	return t
+}
+
 // Comments returns attached comments
 func (t *Token) Comments() []*comment.Comment {
 	return t.comments
